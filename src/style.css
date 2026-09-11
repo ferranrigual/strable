@@ -1,0 +1,128 @@
+:root {
+  --table: #3b2f25;
+  --sand: #d9b77e;
+  --gold: #f1c232;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--table);
+  color: var(--sand);
+  font-family: 'IM Fell English', Georgia, 'Times New Roman', serif;
+}
+
+a {
+  color: var(--gold);
+}
+
+.defs-host {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 16px 4rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  margin: 2.5rem 0 0.25rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid rgb(217 183 126 / 0.3);
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.subtitle,
+section > p {
+  margin: 0.25rem 0 1rem;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  gap: 0.75rem;
+}
+
+.swatch {
+  overflow: hidden;
+  border-radius: 4px;
+  background: rgb(0 0 0 / 0.2);
+}
+
+.swatch-chip {
+  height: 3.5rem;
+}
+
+.swatch-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.9rem;
+}
+
+.swatch-label code {
+  font-family: ui-monospace, monospace;
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  margin-top: 0.25rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.05rem;
+}
+
+.terrain-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1rem 1.5rem;
+}
+
+.piece-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.piece-row-label {
+  grid-column: 1 / -1;
+  margin-top: 0.75rem;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+svg.art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.cluster {
+  max-width: 36rem;
+  margin: 0 auto;
+}
