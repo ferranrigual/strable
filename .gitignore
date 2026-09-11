@@ -9,6 +9,9 @@ Thumbs.db
 .idea/
 *.swp
 
+# Third-party reference images (not ours to publish)
+reference/
+
 # Env
 .env
 .env.local
